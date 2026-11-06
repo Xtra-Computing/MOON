@@ -12,6 +12,16 @@ from sklearn.metrics import confusion_matrix
 
 from model import *
 from datasets import CIFAR10_truncated, CIFAR100_truncated, ImageFolder_custom
+from quantization import (
+    calc_compression_stats,
+    dequantize_representations,
+    dequantize_state_dict,
+    dequantize_tensor,
+    quantize_representations,
+    quantize_state_dict,
+    quantize_tensor,
+    simulate_quantization,
+)
 
 logging.basicConfig()
 logger = logging.getLogger()
